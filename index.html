@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank now</title>
+  <link rel="stylesheet" href="validate.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Junior Som</h2>
+    </div>
+    <span id="msg"></span>
+    <div id="error"></div>
+    <div id="success"></div>
+    <div class="form-control">
+      <!-- <button type="button" onclick="enviardados()">Enviar dados</button> -->
+    </div>
+    <form id="form" class="form">
+      <div class="form-control">
+        <label id="labelnome" for="nome">Nome: </label>
+        <input type="text" id="Username" name="nome" placeholder="nome completo" >
+        <i class="fa-solid fa-exclamation-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <small class="small">Message of error</small>
+      </div>
+
+      <div class="form-control">
+        <label id="labelcnpj" for="cnpj">CNPJ: </label>
+        <input type="number" name="cnpj" id="cnpj" placeholder="ex.:33999777000155" />
+        <i class="fa-solid fa-exclamation-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <small class="small">Message of error</small>
+      </div>
+
+      <!--add novos dados para a empresa taramps-->
+      <div class="form-control">
+        <label id="labelcelular" for="celular"> Celular: </label>
+        <input type="number" name="celular" id="phone" placeholder="ex:31999990000"  />
+        <i class="fa-solid fa-exclamation-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <small class="small">Message of error</small>
+      </div>
+      <!--add novos dados para a empresa taramps-->
+      <div class="form-control">
+        <label id="labelcidade" for="cidade"> Cidade: </label>
+        <input type="text" name="cidade" id="Cidade" placeholder="ex:Belo Horizonte"  />
+        <i class=" fa-solid fa-exclamation-circle"></i>
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+        <small class="small">Message of error</small>
+      </div>
+      <div class="form-control">
+        <!-- <button type="submit" id="check" value="Checkdata">Check data</button> -->
+
+        <button type="submit" id="send" value="send">Verificar dados
+        </button>
+        <!-- <button type="button" id="check" value="Check"></button> -->
+        <!-- <input type="submit" id="check" value="Check"> -->
+        <!-- <input onclick="javascrip:document.location.reload()" type="submit" value="&#x1F504;Reload"> -->
+        <button type="button" onclick="enviardados()">Participar do evento</button>
+
+      </div>
+      <!-- <div class="form-control">
+        <button type="button" onclick="enviardados()">Enviar dados</button>
+      </div> -->
+    </form>
+    <script src="https://kit.fontawesome.com/8dbc803407.js" crossorigin="anonymous"></script>
+  </div>
+  <script src="validate.js"></script>
+  <script src="custom.js"></script>
+</body>
+
+</html>
