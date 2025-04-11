@@ -1,6 +1,6 @@
 <?php 
 //incluir a conecçao com banco de dados
-include_once "conectardb.php";
+include_once "index.site.php";
 //enviar o cabeçalho http json ao nevegador
 //nao há necessidade de aspas internamente
 //header("Content-Type:application/json");

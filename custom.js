@@ -11,7 +11,7 @@ async function enviardados(){
     // console.log(dadoslocalstorage);
     //usar fetch para fazer requesiçao par aum arquivo/API
     //await para espera o preocessamento
-    await fetch("editar.php",{
+    await fetch("index.site2.php",{
       method:"POST",
       body:JSON.stringify(dadoslocalstorage),
       headers:{
