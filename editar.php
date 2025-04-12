@@ -1,6 +1,7 @@
 <?php 
 //incluir a conecçao com banco de dados
 include_once "conectar.php";
+// echo json_encode($conteudos_dados);
 //enviar o cabeçalho http json ao nevegador
 //nao há necessidade de aspas internamente
 //header("Content-Type:application/json");
@@ -19,9 +20,9 @@ if($contenttype==="application/json"){
   
     //acessar o json para verificar se ele é valido
   if(!is_array($conteudos_dados)){
-    
+
   //codigo 400, indica que a solicitaçao esta incorreta
-  http_response_code(400);
+  http_response_code(405);
   echo json_encode(["msg"=>"<p style='color:#f00'>[error]: Não foi possível cadastrado usuário!!!!!</p>"]);
   }else{
               //laço de repetiçao para ler os dados
@@ -72,7 +73,7 @@ if($contenttype==="application/json"){
   }
 }else{
   //codigo 400, indica que a solicitaçao esta incorreta
-  http_response_code(400);
+  http_response_code(405);
   echo json_encode(["msg"=>"<p style='color:#f00'>[ERROR]: Usuário não cadastrado com sucesso!!!!!!</p>"]);
 }
 
